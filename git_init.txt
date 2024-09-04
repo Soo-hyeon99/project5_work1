@@ -1,0 +1,73 @@
+1. git으로 관리할 경로까지 이동
+
+2. 초기화(.git 폴더 생성 - 숨겨져 있음)
+    git init
+
+3. 브랜치 이름 기본값 변경하기(master 일때)
+    git config --global init.defaultBranch main (초기값 변경)
+    git branch -M main (현재 브랜치명 수정)
+
+4. git 상태확인
+    git status
+
+5. git으로 관리하는 파일로 추가
+    git add .
+
+6. commit: 해당 시점을 저장
+    git commit -m "저장할 메시지"
+
+7. commit 이전에 계정정보 등록(--global 옵션은 해당 컴퓨터 전체에 적용)
+    git config --global user.name soo-hyeon99
+    git config --global user.email soohyuen@naver.com
+
+8. commit 정보 확인
+    git log
+    빠져 나올때는 q 입력
+
+9. 과제
+    project_5/test1를 생성
+    git으로 관리
+    파일 생성은 알아서.... 최소 커밋의 수는 5번 이상 되도록 하기
+
+--------------------------------------------------------------------------
+로컬 컴퓨터와 github 사이트(비어있음) 연결
+
+1. remote 정보 확인
+    git remote
+    git remote -v
+
+2. remote 추가
+    git remote add 리모트이름 github리파지토리주소
+    ex) git remote add origin https://github.com/Soo-hyeon99/project5_work1.git
+
+3. remote 삭제
+    git remote rm 리모트이름
+    git remote rm origin
+4. window에서 위 명령어 실행시 안 될 경우에는 이미 컴퓨터 내에 git 주소가 등록되어 있어서 일수도 있음. 그럴경우, 자격증명관리 들어가서
+    windows 자격증명 들어가서 이미 등록되어 있는 git 자격 증명을 삭제해주고 다시 명령어 실행하면 됨
+5. github에 데이터 넣기
+    
+    git push -u origin main
+    
+    git push
+    
+---------------------------------------------------------------------------
+
+위 설정 다 해준 뒤에는
+
+git add .
+
+git commit -m "저장할 메시지"
+
+git push
+
+이 세 개만 하면 된다!
+
+--------------------------------------------------------------------------
+
+.git 파일 삭제 방법(in terminal)
+
+rm -rf .git
+
+-------------------------------------------------------------------------
+clone 하기
