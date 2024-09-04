@@ -20,6 +20,13 @@
     git config --global user.name soo-hyeon99
     git config --global user.email soohyuen@naver.com
 
+    계정정보 확인 가능 명령어
+    git config list
+
+    계정정보 등록 잘못 했을때
+    git config --global --unset user.name
+    git config --global --unset user.email
+
 8. commit 정보 확인
     git log
     빠져 나올때는 q 입력
@@ -43,8 +50,10 @@
 3. remote 삭제
     git remote rm 리모트이름
     git remote rm origin
+
 4. window에서 위 명령어 실행시 안 될 경우에는 이미 컴퓨터 내에 git 주소가 등록되어 있어서 일수도 있음. 그럴경우, 자격증명관리 들어가서
     windows 자격증명 들어가서 이미 등록되어 있는 git 자격 증명을 삭제해주고 다시 명령어 실행하면 됨
+
 5. github에 데이터 넣기
     
     git push -u origin main
@@ -70,4 +79,9 @@ git push
 rm -rf .git
 
 -------------------------------------------------------------------------
-clone 하기
+clone - 코드가 없는 상태에서 전체 코드를 다운로드 받을 경우
+
+
+
+--------------------------------------------------------------------------
+pull - 코드가 있는 상태에서 변경된 부분만 받을 경우
